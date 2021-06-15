@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	font-weight: normal;
+}
+img {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:bottom;
+    background:transparent;
+	} 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+	text-decoration:none;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+ 
+.clearfix {
+    display: inline-table;
+    min-height: 1%;
+}
+ 
+/* Hides from IE-mac */
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+/* End hide from IE-mac */
+
+.clear {
+	clear:both;
+}
+
+/* 追記：formタグリセット */
+
+input,
+button,
+textarea,
+select {
+  /* デフォルトスタイルをリセット */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* font-familyを継承しないので、継承させる */
+  font-family: inherit;
+	
+  border: 0;
+
+  /* iOSの角丸をリセット */
+  border-radius: 0;
+
+  /* box-size */
+  box-sizing: border-box;
+
+  /* 文字の大きさ iOSでズームさせないために16px以上を指定 */
+  font-size: 16px;
+
+  /* 文字色を親から継承 */
+  color: inherit;
+}
+
+label {
+  /* iOSでのlabelとinput,select,textareaの関連付け */
+  cursor: pointer;
+}
+
+/* スピンボタン非表示 chrome,safari */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button,
+input[type="month"]::-webkit-outer-spin-button,
+input[type="month"]::-webkit-inner-spin-button,
+input[type="datetime-local"]::-webkit-outer-spin-button,
+input[type="datetime-local"]::-webkit-inner-spin-button,
+input[type="week"]::-webkit-outer-spin-button,
+input[type="week"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-outer-spin-button,
+input[type="time"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-outer-spin-button,
+input[type="date"]::-webkit-inner-spin-button {
+  /*-webkit-appearance: none;
+  margin: 0;*/
+  display: none;
+}
+
+/* スピンボタン非表示(firefox) */
+input[type="number"],
+input[type="month"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="time"],
+input[type="date"] {
+  -moz-appearance: textfield;
+}
+
+/* クリアボタン非表示 */
+input[type="date"]::-webkit-clear-button,
+input[type="month"]::-webkit-clear-button,
+input[type="datetime-local"]::-webkit-clear-button,
+input[type="time"]::-webkit-clear-button,
+input[type="week"]::-webkit-clear-button {
+  -webkit-appearance: none;
+}
